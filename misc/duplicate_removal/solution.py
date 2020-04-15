@@ -3,10 +3,10 @@
 
 def duplicate_removal():
     file = open("input.txt", "r")
-    len_mass = int(file.readline().strip())
+    array_len = int(file.readline().strip())
     previous = -1
     clean = []
-    for i in range(len_mass):
+    for i in range(array_len):
         item = int(file.readline().strip())
         if item != previous:
             clean.append(item)
