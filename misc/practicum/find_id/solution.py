@@ -15,6 +15,7 @@ def find_id():
     file = open("input.txt", "r")
     n = int(file.readline().strip())
     arr_full = [0]*(n+1)
+    arr_full2 = [0 for _ in range(n+1)]
     arr = list(map(int, file.readline().split()))
     for i in arr:
         arr_full[i] += 1
